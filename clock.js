@@ -20,6 +20,7 @@ function clock(){
     $('#s').text(second);
 }
 $(function(){
+    clock();
     setInterval(clock, 1000);  
 })
 
