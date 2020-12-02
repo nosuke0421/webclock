@@ -58,6 +58,8 @@ var NOW_IMG_NUM = 0;
 function change_img(hour){
     if(NOW_IMG_NUM != hour){
         $('body').css('background','url(' + DIR + IMGS[hour] + ')');
+        $('body').css('background-size','cover');
+        $('body').css('background-position','center');
         NOW_IMG_NUM = hour;
     }
 }
